@@ -14,6 +14,7 @@ namespace OldHomeWork4
             Task1();
             Task2();
             Task3();
+            Task4();
         }
 
         private static void Task1()
@@ -67,6 +68,8 @@ namespace OldHomeWork4
             }
         }
 
+        #region FullTask3
+
         private static void Task3()
         {
             try
@@ -98,6 +101,28 @@ namespace OldHomeWork4
 
             ResultMessage($"\nCount of {inputSymbol.KeyChar} is {inputSymbolCount}");
         }
+
+        #endregion
+        
+        private static void Task4()
+        {
+            try
+            {
+                char[] alphabet = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
+
+                for (int i = 0; i < alphabet.Length; i++)
+                {
+                    ResultMessage($"{alphabet[i]} -> {(byte)alphabet[i]}");
+                }
+
+                Console.ReadKey();
+            }
+            catch (Exception e)
+            {
+                ResultMessage($"Error: {e.Message}");
+            }
+        }
+        
         private static void ResultMessage(string message)
         {
             Console.WriteLine("------------------");
