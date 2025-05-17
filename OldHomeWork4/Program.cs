@@ -9,6 +9,11 @@ namespace OldHomeWork4
         private static int evenNumbers;
         public static void Main(string[] args)
         {
+            Task2();
+        }
+
+        private static void Task2()
+        {
             try
             {
                 int[] array = new int[_rand.Next(24, 51)];
