@@ -1,0 +1,6 @@
+C:\Users\Kirill\Desktop\UnityCourse\OldHomeTaskIntoGit\OldHomeWork4\OldHomeWork4\bin\Debug\OldHomeWork4.exe
+C:\Users\Kirill\Desktop\UnityCourse\OldHomeTaskIntoGit\OldHomeWork4\OldHomeWork4\bin\Debug\OldHomeWork4.pdb
+C:\Users\Kirill\Desktop\UnityCourse\OldHomeTaskIntoGit\OldHomeWork4\OldHomeWork4\obj\Debug\OldHomeWork4.csproj.AssemblyReference.cache
+C:\Users\Kirill\Desktop\UnityCourse\OldHomeTaskIntoGit\OldHomeWork4\OldHomeWork4\obj\Debug\OldHomeWork4.csproj.CoreCompileInputs.cache
+C:\Users\Kirill\Desktop\UnityCourse\OldHomeTaskIntoGit\OldHomeWork4\OldHomeWork4\obj\Debug\OldHomeWork4.exe
+C:\Users\Kirill\Desktop\UnityCourse\OldHomeTaskIntoGit\OldHomeWork4\OldHomeWork4\obj\Debug\OldHomeWork4.pdb
