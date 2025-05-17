@@ -1,4 +1,5 @@
 using System;
+using System.Threading.Tasks;
 
 namespace OldHomeWork4
 {
@@ -12,6 +13,7 @@ namespace OldHomeWork4
         {
             Task1();
             Task2();
+            Task3();
         }
 
         private static void Task1()
@@ -40,6 +42,7 @@ namespace OldHomeWork4
                 ResultMessage($"Error: {e.Message}");
             }
         }
+
         private static void Task2()
         {
             try
@@ -57,7 +60,6 @@ namespace OldHomeWork4
                 }
 
                 ResultMessage($"Even numbers count: {evenNumbers}\n{result}");
-                Console.ReadKey();
             }
             catch (Exception e)
             {
@@ -65,6 +67,37 @@ namespace OldHomeWork4
             }
         }
 
+        private static void Task3()
+        {
+            try
+            {
+                string inputString = Console.ReadLine();
+                ResultMessage($"Count of chars: {inputString?.Length}");
+
+                Task3dot1(inputString);
+                Console.ReadKey();
+            }
+            catch (Exception e)
+            {
+                ResultMessage($"Error: {e.Message}");
+            }
+        }
+        private static void Task3dot1(string inputString)
+        {
+            Console.WriteLine("Which symbol do you want to find?");
+            ConsoleKeyInfo inputSymbol = Console.ReadKey();
+            int inputSymbolCount = 0;
+            foreach (var character in inputString)
+            {
+                if (char.ToLower(inputSymbol.KeyChar) == character ||
+                    char.ToUpper(inputSymbol.KeyChar) == character)
+                {
+                    inputSymbolCount++;
+                }
+            }
+
+            ResultMessage($"\nCount of {inputSymbol.KeyChar} is {inputSymbolCount}");
+        }
         private static void ResultMessage(string message)
         {
             Console.WriteLine("------------------");
